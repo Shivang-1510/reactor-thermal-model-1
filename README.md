@@ -1,70 +1,101 @@
-# Reactor Thermal Analysis using Python
+# Reactor Thermal-Hydraulic Analysis
 
 ## Overview
 
-This project models the thermal behavior of a nuclear reactor cooling system by calculating the heat removed by the coolant. It provides a simplified analysis of reactor heat transfer and cooling efficiency, which are critical for safe reactor operation.
+This project models the thermal behavior of a nuclear reactor cooling system by analyzing heat removal as a function of coolant flow rate. It demonstrates the importance of thermal-hydraulic design in maintaining reactor safety and efficiency.
+
+---
 
 ## Objectives
 
-* Calculate heat removal from reactor core using coolant flow
-* Analyze temperature rise in coolant
-* Estimate cooling efficiency of the reactor system
-* Understand basic thermal-hydraulic principles in nuclear reactors
+* Calculate heat removal from reactor core
+* Analyze effect of coolant mass flow rate
+* Understand thermal performance of reactor cooling systems
+* Visualize heat transfer behavior
+
+---
 
 ## Theory
 
-The heat removed by the coolant is calculated using:
+Heat removal by coolant is given by:
 
 Q = m × c × ΔT
 
 Where:
 
 * Q = Heat transfer rate (W)
-* m = Mass flow rate of coolant (kg/s)
+* m = Mass flow rate (kg/s)
 * c = Specific heat capacity (J/kg·K)
 * ΔT = Temperature rise (K)
+
+---
 
 ## Methodology
 
 * Assumed water as coolant
-* Used standard thermodynamic relation for heat transfer
-* Defined reactor operating parameters (flow rate, temperature rise)
-* Computed total heat removal and compared with reactor power
+* Defined a range of mass flow rates
+* Calculated heat removal using thermodynamic relation
+* Plotted variation of heat removal with flow rate
+
+---
 
 ## Results
 
-* Calculated heat removal capacity of coolant system
-* Estimated cooling efficiency relative to reactor thermal power
-* Demonstrated importance of coolant flow in reactor safety
+### Sample Calculation
 
-## Tools & Technologies
+* At 500 kg/s → Heat removed ≈ 63 MW
+
+---
+
+## Visualization
+
+![Heat vs Flow](results2.png)
+
+---
+
+## Key Insights
+
+* Heat removal increases linearly with coolant flow rate
+* Higher flow rates improve reactor cooling efficiency
+* Thermal management is critical for reactor safety
+
+---
+
+## Tools Used
 
 * Python
 * NumPy
+* Matplotlib
+
+---
 
 ## How to Run
 
-1. Install dependencies:
-   pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+python src/main.py
+```
 
-2. Run the program:
-   python main.py
-
-## Sample Output
-
-Heat removed by coolant: 63.00 MW
-Cooling efficiency: 2.10 %
+---
 
 ## Applications
 
-* Nuclear reactor thermal analysis
-* Cooling system design
-* Safety analysis in power plants
-* Energy system modeling
+* Reactor cooling system design
+* Thermal safety analysis
+* Nuclear power plant operation
 
-## Future Improvements
+---
 
-* Add graphical visualization (temperature vs flow rate)
+## Future Work
+
 * Include different coolants (liquid sodium, helium)
-* Extend to transient heat transfer analysis
-* Integrate with reactor simulation models
+* Add transient heat transfer analysis
+* Integrate with reactor core temperature modeling
+
+---
+
+## Author
+
+Shivang Arora
+Energy Engineering Student | Nuclear Energy Enthusiast
+
