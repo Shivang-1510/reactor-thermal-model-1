@@ -68,9 +68,3 @@ Cooling efficiency: 2.10 %
 * Include different coolants (liquid sodium, helium)
 * Extend to transient heat transfer analysis
 * Integrate with reactor simulation models
-
-## Author
-
-Shivang Arora
-B.Tech Energy Engineering
-Interest: Nuclear Energy Systems & Reactor Analysis
