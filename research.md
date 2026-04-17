@@ -3,7 +3,7 @@
 ## Introduction
 Thermal-hydraulics plays a critical role in nuclear reactor safety by ensuring efficient heat removal from the reactor core.
 
-## Equation Used
+## Equation 
 Q = m × c × ΔT
 
 ## Assumptions
